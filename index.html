@@ -178,6 +178,18 @@
                   <span>BibTex</span>
                 </a>
               </span>
+
+              <span class="link-block">
+                <a href="https://eccv.ecva.net/virtual/2024/poster/1118"
+                    class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-image" aria-hidden="true"></i>
+                </span>
+                <span>Poster</span>
+                </a>
+              </span>
+
+
             </div>
           </div>
         </div>
@@ -194,7 +206,6 @@
             They can describe a “dog in a park,” but struggle to count the dogs, infer their poses, or distinguish between subtle textures and spatial relations.
             X-Former addresses this limitation by integrating CLIP (contrastive learning) and MAE (masked image modeling) encoders via a dual cross-attention transformer that fuses their complementary strengths:
             </p>
-        <br>
         <div class="content">
             <ul>
                 <li> CLIP → low-frequency, global semantics</li>
@@ -256,7 +267,7 @@
               <ul>
                 <li>
                   <strong>Dual-Encoder Fusion for Global–Local Understanding</strong><br />
-                  Integrates <strong>CLIP-ViT</strong> (contrastive learning) and <strong>MAE-ViT</strong> (masked image modeling) as frozen backbones—CLIP for broad semantic context, MAE for detailed, high-frequency visual cues.
+                  Integrates <strong>CLIP-ViT</strong> (contrastive learning) and <strong>MAE-ViT</strong> (masked image modeling) as frozen backbones, CLIP for broad semantic context, MAE for detailed, high-frequency visual cues.
                 </li>
                 <li>
                   <strong>Dual Cross-Attention Transformer Module</strong><br />
@@ -264,7 +275,7 @@
                 </li>
                 <li>
                   <strong>Unified and Data-Efficient Pre-training</strong><br />
-                  Jointly optimizes <abbr title="Image–Text Contrastive">ITC</abbr>, <abbr title="Image–Text Matching">ITM</abbr>, <abbr title="Image–Text Generation">ITG</abbr>, and <strong>Image Reconstruction</strong> using only <strong>14M</strong> image–text pairs—over <strong>10× fewer</strong> than BLIP-2—while maintaining strong performance.
+                  Jointly optimizes <abbr title="Image–Text Contrastive">ITC</abbr>, <abbr title="Image–Text Matching">ITM</abbr>, <abbr title="Image–Text Generation">ITG</abbr>, and <strong>Image Reconstruction</strong> using only <strong>14M</strong> image–text pairs; over <strong>10× fewer</strong> than BLIP-2 while maintaining strong performance.
                 </li>
                 <li>
                   <strong>Plug-and-Play Alignment with Frozen LLMs</strong><br />
@@ -272,7 +283,7 @@
                 </li>
                 <li>
                   <strong>Fine-Grained Visual Reasoning</strong><br />
-                  Consistently outperforms BLIP-2 on VQAv2, GQA, and OK-VQA, with significant gains in <em>object counting</em> and <em>multi-class identification</em>—achieving enhanced fine-grained visual perception.
+                  Consistently outperforms BLIP-2 on VQAv2, GQA, and OK-VQA, with significant gains in <em>object counting</em> and <em>multi-class identification</em>, achieving enhanced fine-grained visual perception.
                 </li>
               </ul>
           </p>
@@ -308,7 +319,7 @@
         <div class="content has-text-centered">
             <img src="./static/images/xformer_s1.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
-            <b>Figure:</b> <p>Overview of <b><i>X-Former</i></b> which extends Q-Former by introducing a dual cross-attention module to capture both local and global visual features.
+            <p> <b>Figure:</b> Overview of <b><i>X-Former</i></b> which extends Q-Former by introducing a dual cross-attention module to capture both local and global visual features.
           </p>
         </div>
 
@@ -322,7 +333,7 @@
         <div class="content has-text-centered">
             <img src="./static/images/xformer_s2.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
-            <b>Figure:</b> <p><b><i>X-Former</i></b> LLM Alignment. X-Former queries are aligned with a frozen LLM, FC layer adapts the query output(Z′) to LLM embedding space
+            <p> <b>Figure:</b> <b><i>X-Former</i></b> LLM Alignment. X-Former queries are aligned with a frozen LLM, FC layer adapts the query output(Z′) to LLM embedding space
           </p>
         </div>
 
