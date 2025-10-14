@@ -190,17 +190,20 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
         <p>
-            Current Multimodal Large Language Models (MLLMs) rely heavily on CLIP-ViT vision encoders, which excel at global semantic alignment but fail to capture fine-grained local visual details (e.g., object instances, attributes, spatial relations).
+            Current Multimodal Large Language Models (MLLMs) rely heavily on <i>CLIP-ViT</i> vision encoders, which excel at global semantic alignment but fail to capture fine-grained local visual details (e.g., object instances, attributes, spatial relations).
             They can describe a “dog in a park,” but struggle to count the dogs, infer their poses, or distinguish between subtle textures and spatial relations.
             X-Former addresses this limitation by integrating CLIP (contrastive learning) and MAE (masked image modeling) encoders via a dual cross-attention transformer that fuses their complementary strengths:
+            </p>
         <br>
+        <div class="content">
             <ul>
                 <li> CLIP → low-frequency, global semantics</li>
                 <li> MAE → high-frequency, local details</li>
             </ul>
+        </div>
             <!-- <br> -->
-        X-Former empowers MLLMs to perceive both the global and local details enabling detailed visual understanding.
-        </p>
+        <strong>X-Former</strong> empowers MLLMs to perceive both the global and local details enabling <i>detailed visual understanding</i>.
+
 
     <div class="column">
         <div style="text-align:center;" >
@@ -269,7 +272,7 @@
                 </li>
                 <li>
                   <strong>Fine-Grained Visual Reasoning</strong><br />
-                  Consistently outperforms BLIP-2 on VQAv2, GQA, and OK-VQA, with notable gains in <em>object counting</em> and <em>multi-class identification</em>—achieving enhanced fine-grained visual perception.
+                  Consistently outperforms BLIP-2 on VQAv2, GQA, and OK-VQA, with significant gains in <em>object counting</em> and <em>multi-class identification</em>—achieving enhanced fine-grained visual perception.
                 </li>
               </ul>
           </p>
@@ -305,8 +308,7 @@
         <div class="content has-text-centered">
             <img src="./static/images/xformer_s1.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
-            <b>Figure:</b> <p>
-                Overview of <b><i>X-Former</i></b> which extends Q-Former by introducing a dual cross-attention module to capture both local and global visual features.
+            <b>Figure:</b> <p>Overview of <b><i>X-Former</i></b> which extends Q-Former by introducing a dual cross-attention module to capture both local and global visual features.
           </p>
         </div>
 
@@ -320,8 +322,7 @@
         <div class="content has-text-centered">
             <img src="./static/images/xformer_s2.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
-            <b>Figure:</b> <p>
-            <b><i>X-Former</i></b> LLM Alignment. X-Former queries are aligned with a frozen LLM, FC layer adapts the query output(Z′) to LLM embedding space
+            <b>Figure:</b> <p><b><i>X-Former</i></b> LLM Alignment. X-Former queries are aligned with a frozen LLM, FC layer adapts the query output(Z′) to LLM embedding space
           </p>
         </div>
 
@@ -347,7 +348,7 @@
 
             Zero-Shot Results on GQA, OK-VQA dataset, <b>*</b>indicates the result is obtained using the official checkpoint. </p>
 
-        <img src="./static/images/zs_qa.png"  style="max-width:75%">
+        <img src="./static/images/zs_qa.png"  style="max-width:70%">
     </div>
 
     <br/>
@@ -356,7 +357,7 @@
           <div class="content has-text-centered">
           <p style="text-align: justify;">
 
-          Fine-Grained Visual Perception evaluation on Object Counting (OC) & Multi-class Identification (MCI) tasks. * evaluated using official checkpoint
+          Fine-Grained Visual Perception evaluation on Object Counting (OC) & Multi-class Identification (MCI) tasks.
 
         <img src="./static/images/zs_fgvp.png"  style="max-width:80%">
         </div>
