@@ -189,16 +189,18 @@
   <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <p align="justify">
+        <p>
             Current Multimodal Large Language Models (MLLMs) rely heavily on CLIP-ViT vision encoders, which excel at global semantic alignment but fail to capture fine-grained local visual details (e.g., object instances, attributes, spatial relations).
             They can describe a “dog in a park,” but struggle to count the dogs, infer their poses, or distinguish between subtle textures and spatial relations.
             X-Former addresses this limitation by integrating CLIP (contrastive learning) and MAE (masked image modeling) encoders via a dual cross-attention transformer that fuses their complementary strengths:
+        <br>
             <ul>
-                <li>CLIP → low-frequency, global semantics</li>
-                <li>MAE → high-frequency, local details</li>
+                <li> CLIP → low-frequency, global semantics</li>
+                <li> MAE → high-frequency, local details</li>
             </ul>
             <!-- <br> -->
         X-Former empowers MLLMs to perceive both the global and local details enabling detailed visual understanding.
+        </p>
 
     <div class="column">
         <div style="text-align:center;" >
@@ -345,7 +347,7 @@
 
             Zero-Shot Results on GQA, OK-VQA dataset, <b>*</b>indicates the result is obtained using the official checkpoint. </p>
 
-        <img src="./static/images/zs_qa.png"  style="max-width:100%">
+        <img src="./static/images/zs_qa.png"  style="max-width:75%">
     </div>
 
     <br/>
@@ -356,7 +358,7 @@
 
           Fine-Grained Visual Perception evaluation on Object Counting (OC) & Multi-class Identification (MCI) tasks. * evaluated using official checkpoint
 
-        <img src="./static/images/zs_fgvp.png"  style="max-width:100%">
+        <img src="./static/images/zs_fgvp.png"  style="max-width:80%">
         </div>
 
     </div>
@@ -370,8 +372,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title"><a id="bibtex">BibTeX</a></h2>
-    <pre><code>
-        @inproceedings{Swetha_Xformer_ECCV2024,
+    <pre><code>@inproceedings{Swetha_Xformer_ECCV2024,
   title={X-former: Unifying contrastive and reconstruction learning for mllms},
   author={Sirnam, Swetha and Yang, Jinyu and Neiman, Tal and Rizve, Mamshad Nayeem and Tran, Son and Yao, Benjamin and Chilimbi, Trishul and Shah, Mubarak},
   booktitle={European Conference on Computer Vision},
